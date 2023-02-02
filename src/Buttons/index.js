@@ -1,6 +1,7 @@
 import './style.css'
 
-const Buttons = () => (
+const Buttons = () => {
+return (
     <>
         <button className="button button__mode">Use input mode</button>
         <button 
@@ -8,5 +9,5 @@ const Buttons = () => (
         >Oblicz</button>
     </>
 );
-
+};
 export default Buttons;
