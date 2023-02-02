@@ -24,10 +24,10 @@ const Input = ({ title, inputCurrency }) => {
                 case "EUR":
                     return amount / eur;
             };
-        }
+        };
     };
     let result = convert(amount, currency);
-       return (
+    return (
         <>
             <fieldset className="input__fieldset">
                 <legend className="input__legend">{title}</legend>
