@@ -7,7 +7,11 @@ function App() {
   return (
     <main>
       <Form
-        mainContent={<Input />}
+        mainContent={
+          <Input
+            title="Przelicznik walut"
+            inputCurrency="PLN"
+          />}
         extraContent={<Buttons />}
       />
       <Footer date="20.11.2022" />
