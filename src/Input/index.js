@@ -14,6 +14,7 @@ const Input = ({ title, inputCurrency }) => {
         const eur = 4.69;
         const gbp = 5.41;
         if (amount > 0) {
+            // eslint-disable-next-line
             switch (currency) {
                 case "USD":
                     return amount / usd;
