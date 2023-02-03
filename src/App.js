@@ -11,7 +11,7 @@ function App() {
   const [currency, setCurrency] = useState("USD");
   const onSelectChange = ({ target }) => setCurrency(target.value);
 
-  let convert = (amount, currency) => {
+  const convert = (amount, currency) => {
     const usd = 4.55;
     const eur = 4.69;
     const gbp = 5.41;
