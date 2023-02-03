@@ -1,33 +1,8 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './style.css'
 
-const Input = ({ title, inputCurrency }) => {
+const Input = ({ title, inputCurrency, amount, inputAmount, currency, onSelectChange, result }) => {
 
-    const [amount, setAmount] = useState("");
-    const inputAmount = ({ target }) => setAmount(target.value);
-
-    const [currency, setCurrency] = useState("USD");
-    const onSelectChange = ({ target }) => setCurrency(target.value);
-
-    const convert = (amount, currency) => {
-        const usd = 4.55;
-        const eur = 4.69;
-        const gbp = 5.41;
-        if (amount > 0) {
-            // eslint-disable-next-line
-            switch (currency) {
-                case "USD":
-                    return amount / usd;
-
-                case "GBP":
-                    return amount / gbp;
-
-                case "EUR":
-                    return amount / eur;
-            };
-        };
-    };
-    let result = convert(amount, currency);
     return (
         <>
             <fieldset className="input__fieldset">
