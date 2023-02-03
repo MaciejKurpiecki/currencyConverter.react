@@ -45,6 +45,7 @@ function App() {
         }
         extraContent={<Result
           result={result}
+          currency={currency}
         />}
         buttons={<Buttons
         />}
