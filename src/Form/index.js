@@ -1,6 +1,6 @@
 import './style.css'
 
-const Form = ({ mainContent, extraContent }) => {
+const Form = ({ mainContent, extraContent, buttons }) => {
     const onFormSubmit = (event) => {
         event.preventDefault();
     };
@@ -12,6 +12,7 @@ const Form = ({ mainContent, extraContent }) => {
         >
             {mainContent}
             {extraContent}
+            {buttons}
         </form>
     );
 };

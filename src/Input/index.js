@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import './style.css'
 
-const Input = ({ title, inputCurrency, amount, inputAmount, currency, onSelectChange, result }) => {
+const Input = ({ title, inputCurrency, amount, inputAmount, currency, onSelectChange }) => {
 
     return (
         <>
@@ -38,7 +38,6 @@ const Input = ({ title, inputCurrency, amount, inputAmount, currency, onSelectCh
                         </select></label>
                 </p>
             </fieldset>
-            <p className="input__paragraph">Twój wynik to: <strong>{result > 0 ? result.toFixed(2) : "N/A"}</strong></p>
         </>
 
     );

@@ -2,6 +2,7 @@ import Footer from './Footer';
 import Buttons from './Buttons';
 import Input from './Input';
 import Form from './Form';
+import Result from './Result';
 import { useState } from 'react';
 
 function App() {
@@ -40,9 +41,12 @@ function App() {
             inputCurrency="PLN"
             inputAmount={inputAmount}
             onSelectChange={onSelectChange}
-            result={result}
-          />}
-        extraContent={<Buttons
+          />
+        }
+        extraContent={<Result
+          result={result}
+        />}
+        buttons={<Buttons
         />}
       />
       <Footer date="20.11.2022" />
